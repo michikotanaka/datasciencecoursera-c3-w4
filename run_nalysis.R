@@ -59,5 +59,5 @@ out <- tdata %>% group_by(activity, subject) %>% summarize_all(funs(mean))
 
 ## FIN
 #######################################
-write.table(out, "tidy.txt") 
+write.table(out, "tidy.txt", row.name=FALSE) 
 setwd(org_wd)
